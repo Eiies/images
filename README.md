@@ -1,3 +1,3 @@
-# Imges
+# Images
 
 ## 图床
