@@ -1,3 +1,3 @@
-# imges
+# Imges
 
-## 使用 `Vercel` 搭建的图床
+## 图床
