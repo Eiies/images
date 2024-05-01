@@ -47,13 +47,13 @@ const UpFile = () => {
   };
 
   return (
-    <div>
-      <h1>File Upload</h1>
+    <>
+      <h1>上传文件</h1>
       {/* 文件输入框，选择文件时触发 handleFileChange 函数 */}
       <input type="file" onChange={handleFileChange} />
       {/* 上传按钮，点击时触发 handleUpload 函数 */}
       <button onClick={handleUpload}>Upload</button>
-    </div>
+    </>
   );
 };
 
