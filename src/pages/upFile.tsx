@@ -1,7 +1,7 @@
 import { ChangeEvent, useState } from "react";
 import axios from "axios";
 
-const FileUpload = () => {
+const UpFile = () => {
   // 定义状态 selectedFile，初始值为 null，类型为 File 或 null
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
 
@@ -27,9 +27,9 @@ const FileUpload = () => {
       const formData = new FormData();
       formData.append("file", selectedFile);
 
-      // 发送 POST 请求到服务器端点 http://localhost:3001/upload，传递表单数据作为请求体
+      // 发送 POST 请求到服务器端点，传递表单数据作为请求体
       const response = await axios.post(
-        "http://172.19.0.1:9090/uplocad",
+        "http://127.0.0.1:9090/upload",
         formData,
         {
           headers: {
@@ -57,4 +57,4 @@ const FileUpload = () => {
   );
 };
 
-export default FileUpload;
+export default UpFile;
