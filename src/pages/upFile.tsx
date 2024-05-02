@@ -29,7 +29,7 @@ const UpFile = () => {
 
       // 发送 POST 请求到服务器端点，传递表单数据作为请求体
       const response = await axios.post(
-        "http://127.0.0.1:9090/upload",
+        "http://127.0.0.1:9090/api/upload",
         formData,
         {
           headers: {
