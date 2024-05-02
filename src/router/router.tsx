@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../pages/home.tsx";
 import UpFile from "../pages/upFile.tsx";
 import NotPage from "../pages/404.tsx";
+import ReadFile from "../pages/readFile.tsx";
 
 function RouterPath() {
   return (
@@ -14,7 +15,7 @@ function RouterPath() {
           <Route path="about" />
         </Route>
         <Route path="/upload" element={<UpFile />} />
-        <Route path="/readfile" />
+        <Route path="/readfile" element={<ReadFile />} />
         <Route path="/notpage" element={<NotPage />} />
       </Routes>
     </BrowserRouter>
